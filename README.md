@@ -4,8 +4,9 @@
 
 # XSched: Preemptive Scheduling for Diverse XPUs
 
-[![License](https://img.shields.io/badge/License-Apache_2.0-blue)](https://github.com/XpuOS/xsched/blob/main/LICENSE)
+This repository is forked from [XpuOS/xsched](https://github.com/XpuOS/xsched), our latest development progress will be released in [XpuOS/xsched](https://github.com/XpuOS/xsched), please take a look. 😊
 
+[![License](https://img.shields.io/badge/License-Apache_2.0-blue)](https://github.com/XpuOS/xsched/blob/main/LICENSE)
 
 ---
 
