@@ -3,6 +3,7 @@
 #include "xsched/cuda/hal/level3/cuda_queue.h"
 #include "xsched/cuda/hal/common/levels.h"
 #include "xsched/cuda/hal/common/driver.h"
+#include "xsched/cuda/hal/common/options.h"
 #include "xsched/cuda/hal/common/cuda_assert.h"
 #include "xsched/cuda/hal/arch/sm35.h"
 #include "xsched/cuda/hal/arch/sm70.h"
@@ -110,6 +111,6 @@ CUresult xsched::cuda::DirectLaunch(std::shared_ptr<CudaKernelCommand> kernel, C
         return CudaQueueLv3Trap::DirectLaunch(kernel, current_ctx, stream);
     // NEW_CUDA_ARCH: New CUDA architecture support goes here
     default:
-        return CUDA_ERROR_NOT_SUPPORTED;
+        return CudaQueueLv1::DirectLaunch(kernel, stream);
     }
 }
